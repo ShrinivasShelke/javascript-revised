@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let str = "Apple, Banana, Kiwi";
+      //slice
+      let part = str.slice(7, -1);
+      let part1 = str.slice(-12, -6);
+      let part2 = str.slice(7);
+      let part3 = str.slice(-12);
+
+      console.log(part);
+      console.log(part1);
+      console.log(part2);
+      console.log(part3);
+
+      //substring
+      let str2 = "hello ram from delhi";
+      let part4 = str2.substring(1, 5);
+      console.log(part4);
+
+      //substr
+      let str3 = "cricket,football,vooleyball";
+      console.log(str3.substr(5, 15));
+
+      //replace
+      let text = "Please visit Microsoft! and Microsoft";
+      let newText = text.replace(/Microsoft/g, "apple");
+      let newtext1 = text.replace(/MICROSOFT/i, "india");
+      console.log(newText);
+      console.log(newtext1);
+
+      //trim
+      let text1 = "      Hello World!      ";
+      let text2 = text1.trim();
+      console.log(text2);
+
+      //concat
+      let text4 = "Hello";
+      let text5 = "World!";
+      let text6 = "welcome";
+      let text3 = text4.concat(" ", text5, text6);
+      console.log(text3);
+    </script>
+  </body>
+</html>
